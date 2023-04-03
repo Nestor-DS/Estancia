@@ -16,13 +16,13 @@
       <p class="menu-title">Menú<span class="pull-right"><a href="javascript:;"><i class="fa fa-refresh"></i></a></span></p>
 
     <ul>	
-      <li class="start"> <a href="home.php"> <i class="icon-custom-home"></i> <span class="title">Dashboard</span>  </a> 
+      <li class="start"> <a href="home.php"> <i class="icon-custom-home"></i> <span class="title">Inicio</span>  </a> 
 		    </li>
     
           <li><a href="change-password.php"><span class="fa fa-file-text-o"></span> Cambiar contraseña</a></li>
                             <li><a href="manage-users.php"><span class="fa fa-users"></span> Usuarios</a></li>
-                          <li><a href="manage-tickets.php"><span class="fa fa-ticket"></span> Administrar Ticket</a></li>
-                              <li ><a href="manage-quotes.php"> <span class="fa fa-tasks"></span> Administrar citas</a></li> 
+                          <li><a href="manage-appointment.php"><span class="fa fa-ticket"></span> Citas</a></li>
+                              <li ><a href="manage-quotes.php"> <span class="fa fa-tasks"></span> Cotizaciones</a></li> 
                             <li><a href="user-access-log.php"><span class="fa fa-users"></span>&nbsp;&nbsp;Registro de acceso de Usuarios</a></li>
                              
 							    

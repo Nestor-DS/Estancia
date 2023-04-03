@@ -10,7 +10,7 @@ check_login();
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <meta charset="utf-8" />
-  <title>Admin | Administrador de citas</title>
+  <title>Citas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta content="" name="description" />
   <meta content="" name="author" />
@@ -51,21 +51,23 @@ check_login();
     <div class="content">
       <ul class="breadcrumb">
         <li>
-          <p>Usted esta aqui</p>
+          <p>Usted esta aquí</p>
         </li>
-        <li><a href="#" class="active">Citas</a> </li>
+        <li><a href="#" class="active">Cotizaciones</a> </li>
       </ul>
       <div class="page-title"> <i class="icon-custom-left"></i>
-        <h3>Administrador de citas</h3>
+        <h3>Administrador de Cotizaciones</h3>
       </div>
       <div class="row-fluid">
         <div class="span12">
           <div class="grid simple ">
             <div class="grid-title">
-              <h4>Tabla <span class="semi-bold">Estilos</span></h4>
-              <div class="tools"> <a href="javascript:;" class="collapse"></a> <a href="#grid-config"
-                  data-toggle="modal" class="config"></a> <a href="javascript:;" class="reload"></a> <a
-                  href="javascript:;" class="remove"></a> </div>
+              <h4>Tabla <span class="semi-bold">Cotizaciones</span></h4>
+              <div class="tools"> <a href="javascript:;" class="collapse"></a> 
+              
+                  <a href="javascript:;" class="reload"></a> 
+                  <a href="javascript:;" class="remove"></a> 
+              </div>
             </div>
             <div class="grid-body ">
               <table class="table table-hover table-condensed" id="example">
@@ -75,7 +77,7 @@ check_login();
                     <th style="width:10%">Nombre</th>
                     <th style="width:10%" data-hide="phone,tablet">Email</th>
                     <th style="width:10%">No. Contacto</th>
-                    <th style="width:20%" data-hide="phone,tablet">Servicio requerido</th>
+                    <th style="width:20%" data-hide="phone,tablet">Productos requeridos</th>
                     <th style="width:10%">Accción </th>
                   </tr>
                 </thead>

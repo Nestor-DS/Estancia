@@ -2837,7 +2837,7 @@ the specific language governing permissions and limitations under the Apache Lic
             selected = selected.closest(".select2-search-choice");
 
             if (selected.length === 0) {
-                throw "Invalid argument: " + selected + ". Must be .select2-search-choice";
+                throw "Argumento invalido: " + selected + ". Must be .select2-search-choice";
             }
 
             data = selected.data("select2-data");

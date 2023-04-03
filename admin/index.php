@@ -12,7 +12,7 @@ if (isset($_POST['login'])) {
     echo "<script>window.location.href='" . $extra . "'</script>";
     exit();
   } else {
-    $_SESSION['action1'] = "*Invalid username or password";
+    $_SESSION['action1'] = "*Usuario o contraseña incorrecto";
     $extra = "index.php";
 
     echo "<script>window.location.href='" . $extra . "'</script>";
@@ -26,7 +26,9 @@ if (isset($_POST['login'])) {
 <head>
   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <meta charset="utf-8" />
-  <title>CRM | Login de admin</title>
+  <title>Administrador</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta content="" name="description" />
   <meta content="" name="author" />
@@ -46,20 +48,20 @@ if (isset($_POST['login'])) {
     <div class="row login-container column-seperation">
       <div class="col-md-5 col-md-offset-1">
         <h2>Iniciar sesión de administrador</h2>
-
         <br>
-
-
       </div>
       <div class="col-md-5 "> <br>
+
         <form id="login-form" class="login-form" action="" method="post">
+
           <p style="color: #F00">
             <?php echo $_SESSION['action1']; ?>
             <?php echo $_SESSION['action1'] = ""; ?>
           </p>
+          
           <div class="row">
             <div class="form-group col-md-10">
-              <label class="form-label">Nombre de usuario</label>
+              <label class="form-label">Usuario</label>
               <div class="controls">
                 <div class="input-with-icon  right">
                   <i class=""></i>

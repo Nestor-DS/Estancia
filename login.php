@@ -35,7 +35,7 @@ exit();
 }
 else
 {
-$_SESSION['action1']="Invalid username or password";
+$_SESSION['action1']="Usuario o contraseña incorrecto";
 $extra="login.php";
 
 echo "<script>window.location.href='".$extra."'</script>";
