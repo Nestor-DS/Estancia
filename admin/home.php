@@ -68,7 +68,7 @@ check_login();
 
 <!--VISITOR'S TABLE-->
 			  <div class="controller"> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
-                <div class="tiles-title text-black">Visitantes en general </div>
+                <div class="tiles-title text-black">Visitantes</div>
 			         <div class="widget-stats">
                       <div class="wrapper transparent"> 
                       <?php $ov=mysqli_query($con,"select * from usercheck");
@@ -102,7 +102,7 @@ check_login();
 			<div class="tiles blue m-b-10">
               <div class="tiles-body">
 			  <div class="controller"> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
-                <div class="tiles-title text-black">Usuarios registrados </div>
+                <div class="tiles-title text-black">Usuarios</div>
 			         <div class="widget-stats">
                       <div class="wrapper transparent">
                       <?php $rt=mysqli_query($con,"select * from user");
@@ -122,13 +122,13 @@ check_login();
 			  </div>			
 			</div>	
 		</div>
-
+ 
 <!--QUOTES TABLE-->
 		<div class="col-md-4 col-vlg-3 col-sm-6">
 			<div class="tiles purple m-b-10">
               <div class="tiles-body">
 			  <div class="controller"> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
-                <div class="tiles-title text-black">Solicitudes de presupuesto </div>
+                <div class="tiles-title text-black">Presupuestos </div>
 			         <div class="widget-stats">
                       <div class="wrapper transparent"> 
                       <?php
@@ -144,7 +144,7 @@ check_login();
                       $qr1=mysqli_query($con,"select * from prequest where status='0'");
 					  $oq1=mysqli_num_rows($qr1);
 					  ?>
-						<span class="item-title">Nuevas Solicitudes</span> <span class="item-count animate-number semi-bold" data-value="<?php echo $oq1;?>" data-animation-duration="700">0</span> 
+						<span class="item-title">Nuevas</span> <span class="item-count animate-number semi-bold" data-value="<?php echo $oq1;?>" data-animation-duration="700">0</span> 
 					  </div>
                     </div>
                     <div class="widget-stats ">
@@ -170,7 +170,7 @@ check_login();
 			<div class="tiles red m-b-10">
               <div class="tiles-body">
 			  <div class="controller"> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
-                <div class="tiles-title text-black">Tickets en general </div>
+                <div class="tiles-title text-black">Tickets</div>
 			         <div class="widget-stats">
                       <div class="wrapper transparent"> 
                       <?php $vt=mysqli_query($con,"select * from ticket");
@@ -192,7 +192,7 @@ check_login();
 									
 									
 						
-						<span class="item-title">Tickets Pendientes</span> <span class="item-count animate-number semi-bold" data-value="<?php echo $otv1;?>" data-animation-duration="700">0</span> <?php									
+						<span class="item-title">Pendientes</span> <span class="item-count animate-number semi-bold" data-value="<?php echo $otv1;?>" data-animation-duration="700">0</span> <?php									
 									
 									?>
 					 </div>

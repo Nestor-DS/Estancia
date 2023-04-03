@@ -12,7 +12,8 @@
       </div>
       <!-- END MINI-PROFILE -->
       <!-- BEGIN SIDEBAR MENU -->
-      <p class="menu-title">BUSCAR <span class="pull-right"><a href="javascript:;"><i class="fa fa-refresh"></i></a></span></p>
+      <br>
+      <p class="menu-title">Menú<span class="pull-right"><a href="javascript:;"><i class="fa fa-refresh"></i></a></span></p>
 
     <ul>	
       <li class="start"> <a href="home.php"> <i class="icon-custom-home"></i> <span class="title">Dashboard</span>  </a> 
