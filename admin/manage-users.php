@@ -47,7 +47,7 @@ check_login();
             <div class="content">
                 <ul class="breadcrumb">
                     <li>
-                        <p>usted esta aquí/p>
+                        <p>Usted esta aquí</p>
                     </li> 
                     <li><a href="#" class="active">Administrador de usuarios</a>
 
