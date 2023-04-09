@@ -12,12 +12,12 @@ if(isset($_POST['change']))
     if($num>0)
     {
         $con=mysqli_query($con,"update  user set password='".$_POST['newpass']."' where email='".$_SESSION['login']."'");
-        $_SESSION['msg1']="Password Changed Successfully !!";
+        $_SESSION['msg1']="¡Contraseña cambiada con éxito!";
         //header('location:user.php');
     }
     else
     {
-        $_SESSION['msg1']="Old Password not match !!";
+        $_SESSION['msg1']="¡Contraseña antigua no coincide!";
     }
 }
 ?>
@@ -27,7 +27,7 @@ if(isset($_POST['change']))
         <head>
             <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
             <meta charset="utf-8" />
-            <title>CRM | Change Password</title>
+            <title>CRM | Cambiar contraseña</title>
             <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <meta content="" name="description" />
             <meta content="" name="author" />
@@ -47,37 +47,37 @@ if(isset($_POST['change']))
 {
         if(document.form1.oldpass.value=="")
         {
-            alert(" Old Password Field Empty !!");
+            alert("¡Campo de contraseña antigua vacío!");
             document.form1.oldpass.focus();
             return false;
             }
             else if(document.form1.newpass.value=="")
             {
-            alert(" New Password Field Empty !!");
+            alert("¡Campo de contraseña nueva vacío!");
             document.form1.newpass.focus();
             return false;
             }
             else if(document.form1.confirmpassword.value=="")
             {
-            alert(" Re-Type Password Field Empty !!");
+            alert("¡Campo de confirmar contraseña vacío!");
             document.form1.confirmpassword.focus();
             return false;
             }
             else if(document.form1.newpass.value.length<6)
             {
-            alert(" Password Field length must be atleast of 6 characters !!");
+            alert("¡La contraseña debe ser de al menos 6 caracteres!");
             document.form1.newpass.focus();
             return false;
             }
             else if(document.form1.confirmpassword.value.length<6)
             {
-            alert(" Re-Type Password Field less than 6 characters !!");
+            alert("¡La contraseña confirmada es de menos de 6 caracteres!");
             document.form1.confirmpassword.focus();
             return false;
             }
             else if(document.form1.newpass.value!= document.form1.confirmpassword.value)
             {
-            alert("Password and Re-Type Password Field do not match  !!");
+            alert("¡El campo de contraseña y el campo de confirmar contraseña no coinciden!");
             document.form1.newpass.focus();
             return false;
             }
@@ -111,7 +111,7 @@ if(isset($_POST['change']))
     <div class="clearfix"></div>
     <div class="content">  
 		<div class="page-title">	
-			<h3>Change Password</h3>	
+			<h3>Cambiar Contraseña</h3>	
             <div class="row">
                         <div class="col-md-12">
                             
@@ -122,7 +122,7 @@ if(isset($_POST['change']))
                                 <div class="panel-body">                                                                        
                                     <p align="center" style="color:#FF0000"><?php echo $_SESSION['msg1'];?><?php echo $_SESSION['msg1']="";?></p>
                                <div class="form-group">                                        
-                                        <label class="col-md-3 col-xs-12 control-label">Current Password</label>
+                                        <label class="col-md-3 col-xs-12 control-label">Contraseña Actual</label>
                                         <div class="col-md-6 col-xs-12">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><span class="fa fa-unlock-alt"></span></span>
@@ -134,7 +134,7 @@ if(isset($_POST['change']))
 									
 									
 									  <div class="form-group">                                        
-                                        <label class="col-md-3 col-xs-12 control-label">New Password</label>
+                                        <label class="col-md-3 col-xs-12 control-label">Contraseña Nueva</label>
                                         <div class="col-md-6 col-xs-12">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><span class="fa fa-unlock-alt"></span></span>
@@ -143,7 +143,7 @@ if(isset($_POST['change']))
                                           </div>
                                     </div>
 									 <div class="form-group">                                        
-                                        <label class="col-md-3 col-xs-12 control-label">Confirm Password</label>
+                                        <label class="col-md-3 col-xs-12 control-label">Confirmar Contraseña</label>
                                         <div class="col-md-6 col-xs-12">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><span class="fa fa-unlock-alt"></span></span>
@@ -153,8 +153,8 @@ if(isset($_POST['change']))
                                     </div>
                                 </div>
                                 <div class="panel-footer">
-                                    <button class="btn btn-default">Clear Form</button>                                    
-                                    <input type="submit" value="Change" name="change" class="btn btn-primary pull-right">
+                                    <button class="btn btn-default">Limpiar Formulario</button>                                    
+                                    <input type="submit" value="Cambiar" name="change" class="btn btn-primary pull-right">
                                 </div>
                             </div>
                             </form>

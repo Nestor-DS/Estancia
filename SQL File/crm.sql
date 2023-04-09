@@ -15,7 +15,6 @@ MySQL - 10.4.22-MariaDB : Database - crm
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-USE `sql10607902`;
 
 /*Table structure for table `admin` */
 

@@ -9,7 +9,7 @@ include("dbconnection.php");
 <head>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <meta charset="utf-8" />
-<title>CRM | Dashboard </title>
+<title>CRM | Panel </title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta content="" name="description" />
 <meta content="" name="author" />
@@ -49,7 +49,7 @@ include("dbconnection.php");
     <div class="clearfix"></div>
     <div class="content">  
 		<div class="page-title">	
-			<h3>Dashboard</h3>	
+			<h3>Panel</h3>	
             <div class="row 2col">
           <div class="col-md-3 col-sm-6 spacing-bottom-sm spacing-bottom">
             <div class="tiles blue added-margin">
@@ -58,7 +58,7 @@ include("dbconnection.php");
                 <?php $ret=mysqli_query($con,"select * from ticket where email_id='".$_SESSION['login']."'");
 				$num=mysqli_num_rows($ret);
 				?>
-                <div class="heading"> <span class="animate-number" data-value="<?php echo $num;?>" data-animation-duration="1200">0</span>| <a href="view-tickets.php" style="color:#FFF"> View Tickets </a></div>
+                <div class="heading"> <span class="animate-number" data-value="<?php echo $num;?>" data-animation-duration="1200">0</span>| <a href="view-tickets.php" style="color:#FFF"> Ver Notas </a></div>
                 
                 <div class="progress transparent progress-small no-radius">
                   <div class="progress-bar progress-bar-white animate-progress-bar" data-percentage="26.8%"></div>
@@ -73,7 +73,7 @@ include("dbconnection.php");
                 <div class="controller"> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
                
                 <div class="heading"> <span class="fa fa-ticket"></span>
-                <a href="get-quote.php" style="color:#FFF">Get Quote</a>
+                <a href="get-quote.php" style="color:#FFF">Obtener Cotización</a>
                  </div>
                 <div class="progress transparent progress-small no-radius">
                   <div class="progress-bar progress-bar-white animate-progress-bar" data-percentage="79%" ></div>
@@ -88,7 +88,7 @@ include("dbconnection.php");
                 <div class="controller"> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
              
                 <div class="heading">  <span class="fa fa-user"></span>
-                 <a href="profile.php" style="color:#FFF">My Profile</a>
+                 <a href="profile.php" style="color:#FFF">Mi Perfil</a>
                  </div>
                 <div class="progress transparent progress-white progress-small no-radius">
                   <div class="progress-bar progress-bar-white animate-progress-bar" data-percentage="45%" ></div>
@@ -104,7 +104,7 @@ include("dbconnection.php");
                 
                 <div class="row-fluid">
                   <div class="heading"> <span class="fa fa-ticket"></span>
-                  <a href="create-ticket.php" style="color:#FFF">Create </a>
+                  <a href="create-ticket.php" style="color:#FFF">Crear</a>
                    </div>
                   <div class="progress transparent progress-white progress-small no-radius">
                     <div class="progress-bar progress-bar-white animate-progress-bar" data-percentage="12%"></div>

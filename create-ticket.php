@@ -26,7 +26,7 @@ $pdate=date('Y-m-d');
 $a=mysqli_query($con,"insert into ticket(ticket_id,email_id,subject,task_type,prioprity,ticket,status,posting_date)  values('$tid','$email','$subject','$tt','$priority','$ticket','$st','$pdate')");
 if($a)
 {
-echo "<script>alert('Ticket Genrated');</script>";
+echo "<script>alert('Nota Generada');</script>";
 }
 }
 ?>
@@ -36,7 +36,7 @@ echo "<script>alert('Ticket Genrated');</script>";
 <head>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <meta charset="utf-8" />
-<title>CRM | Create  ticket</title>
+<title>CRM | Crear Nota</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta content="" name="description" />
 <meta content="" name="author" />
@@ -81,7 +81,7 @@ echo "<script>alert('Ticket Genrated');</script>";
     <div class="clearfix"></div>
     <div class="content">  
 		<div class="page-title">	
-			<h3>Create ticket</h3>
+			<h3>Crear Nota</h3>
      
 	
              <div class="row">
@@ -93,7 +93,7 @@ echo "<script>alert('Ticket Genrated');</script>";
                                 <div class="panel-body">                                                                        
                                     <p align="center" style="color:#FF0000"><?=$_SESSION['msg1'];?><?=$_SESSION['msg1']="";?></p>
                                <div class="form-group">                                        
-                                        <label class="col-md-3 col-xs-12 control-label">Subject</label>
+                                        <label class="col-md-3 col-xs-12 control-label">Asunto</label>
                                         <div class="col-md-6 col-xs-12">
                                             <div class="input-group">
                                                 <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
@@ -105,34 +105,34 @@ echo "<script>alert('Ticket Genrated');</script>";
 									
 									
 									 <div class="form-group">
-                                        <label class="col-md-3 col-xs-12 control-label">Task Type</label>
+                                        <label class="col-md-3 col-xs-12 control-label">Tipo de Tarea</label>
                                         <div class="col-md-6 col-xs-12">                                                                                            
                                             <select  name="tasktype" class="form-control select" required>
-                                                <option> Select your Task Type</option>
-                                                <option value="billing">Billing</option>
-                                                <option value="ot1">Option 1</option>
-                                                <option value="ot2">Option 2</option>
-                                                <option value="ot3">Option 3</option>
+                                                <option>Selecciona tu Tipo de Tarea</option>
+                                                <option value="billing">Facturación</option>
+                                                <option value="ot1">Opción 1</option>
+                                                <option value="ot2">Opción 2</option>
+                                                <option value="ot3">Opción 3</option>
                                             </select>
                                            </div>
                                     </div>
 									
 										 <div class="form-group">
-                                        <label class="col-md-3 col-xs-12 control-label">Priority</label>
+                                        <label class="col-md-3 col-xs-12 control-label">Prioridad</label>
                                         <div class="col-md-6 col-xs-12">                                                                                            
                                             <select name="priority" class="form-control select">
-                                                <option value="">Choose your Priority</option>
-                                                <option value="important">Important</option>
-                                                <option value="urgent(functional problem)">Urgent (Functional Problem)</option>
-                                                <option value="non-urgent">Non-Urgent</option>
-                                                <option value="question">Question</option>
+                                                <option value="">Selecciona tu Prioridad</option>
+                                                <option value="important">Importante</option>
+                                                <option value="urgent(functional problem)">Urgente (Problema Funcional)</option>
+                                                <option value="non-urgent">No-Urgente</option>
+                                                <option value="question">Pregunta</option>
                                             </select>
                                            </div>
                                     </div>
 									
 									  
                                     <div class="form-group">
-                                        <label class="col-md-3 col-xs-12 control-label">Description</label>
+                                        <label class="col-md-3 col-xs-12 control-label">Descripción</label>
                                         <div class="col-md-6 col-xs-12">                                            
                                             <textarea name="description" required class="form-control" rows="5"></textarea>
                                             
@@ -153,8 +153,8 @@ echo "<script>alert('Ticket Genrated');</script>";
                                 </div>
 								
                                 <div class="panel-footer">
-                                    <button class="btn btn-default">Clear Form</button>                                    
-                                    <input type="submit" value="Send" name="send" class="btn btn-primary pull-right">
+                                    <button class="btn btn-default">Limpiar Formulario</button>                                    
+                                    <input type="submit" value="Enviar" name="send" class="btn btn-primary pull-right">
                                 </div>
                             </div>
                             </form>

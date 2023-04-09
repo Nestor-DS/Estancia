@@ -41,7 +41,7 @@ echo "<script>window.location.href='get-quote.php'</script>";
 <head>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <meta charset="utf-8" />
-<title>CRM | Request Quote</title>
+<title>CRM | Solicitar cotización</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 <meta content="" name="description" />
 <meta content="" name="author" />
@@ -86,7 +86,7 @@ echo "<script>window.location.href='get-quote.php'</script>";
     <div class="clearfix"></div>
     <div class="content">  
 		<div class="page-title">	
-			<h3>Request a Quote</h3>
+			<h3>Solicitar una cotización</h3>
      
 	
              <div class="row">
@@ -96,7 +96,7 @@ echo "<script>window.location.href='get-quote.php'</script>";
                             <div class="panel panel-default">
                              
                                 <div class="panel-body">
-                                    <p>Please click below mention services of your interest to receive quotation for the same:</p>
+                                    <p>Por favor haga clic abajo para mencionar los servicios de su interés para recibir una cotización de los mismos:</p>
                                 </div>
                                 <div class="panel-body">                                                                        
                                     
@@ -110,7 +110,7 @@ while($rw=mysqli_fetch_array($query)){
       ?>                                          
 
     <div class="form-group">
-     <label class="col-md-3 control-label">Name </label>
+     <label class="col-md-3 control-label">Nombre </label>
     <div class="col-md-9">                                            
     <div class="input-group">
         <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
@@ -121,7 +121,7 @@ while($rw=mysqli_fetch_array($query)){
        </div>
                                             
         <div class="form-group">                                        
-   <label class="col-md-3 control-label">Contact no</label>
+   <label class="col-md-3 control-label">No. de contacto </label>
   <div class="col-md-9 col-xs-12">
   <div class="input-group">
    <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
@@ -133,7 +133,7 @@ while($rw=mysqli_fetch_array($query)){
                                             
                                             
 <div class="form-group">
-<label class="col-md-3 control-label">Service Required :</label>
+<label class="col-md-3 control-label">Servicio Requerido: </label>
     <div class="col-md-9">                                                                                                                                        
                                              <label class="check">
                                              <input type="checkbox" class="icheckbox" name="wdnd" value="Website Design & Development" checked="checked"/> Website Design & Development</label><br>
@@ -164,7 +164,7 @@ while($rw=mysqli_fetch_array($query)){
                                         <div class="col-md-6">
                                             
                                             <div class="form-group">                                        
-                                                <label class="col-md-3 control-label">Email</label>
+                                                <label class="col-md-3 control-label">Correo electrónico </label>
                                                 <div class="col-md-9">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
@@ -175,7 +175,7 @@ while($rw=mysqli_fetch_array($query)){
                                             </div>
                                             
                                                <div class="form-group">                                        
-                                                <label class="col-md-3 control-label">Company</label>
+                                                <label class="col-md-3 control-label">Compañía</label>
                                                 <div class="col-md-9">
                                                     <div class="input-group">
                                                         <span class="input-group-addon"><span class="fa fa-pencil"></span></span>
@@ -214,7 +214,7 @@ while($rw=mysqli_fetch_array($query)){
                                         </div>
                                         <div style="margin-top:20px;" class="col-md-6">
                                          <div class="form-group">
-                                                <label class="col-md-3 control-label">Query</label>
+                                                <label class="col-md-3 control-label">Consulta</label>
                                                 <div class="col-md-9 col-xs-12">                                            
                                                     <textarea class="form-control" rows="5" name="query" required></textarea>
                                                 </div>
@@ -224,8 +224,8 @@ while($rw=mysqli_fetch_array($query)){
    <?php } ?>   
                                 </div>
                                 <div class="panel-footer">
-                                    <button class="btn btn-default">Clear Form</button>                                    
-                                    <input value="Submit" type="submit" name="submit" class="btn btn-primary pull-right">
+                                    <button class="btn btn-default">Limpiar Formulario</button>                                    
+                                    <input value="Enviar" type="submit" name="submit" class="btn btn-primary pull-right">
                                 </div>
                             </div>
                             </form>

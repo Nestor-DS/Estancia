@@ -34,10 +34,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="registration.php">User Sign Up</a>
+            <a class="nav-link" href="registration.php">Registro Usuario</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.php">User Log In</a>
+            <a class="nav-link" href="login.php">Inicio de Sesión Usuario</a>
           </li>
 
             <li class="nav-item">
@@ -53,7 +53,7 @@
       <div class="container">
         <h1 class="masthead-heading mb-0">Small CRM</h1>
         <h2 class="masthead-subheading mb-0">Developed using PHP & MySQL</h2>
-        <a href="registration.php" class="btn btn-primary btn-xl rounded-pill mt-5">User Signup</a>
+        <a href="registration.php" class="btn btn-primary btn-xl rounded-pill mt-5">Registro Usuario</a>
       </div>
     </div>
     <div class="bg-circle-1 bg-circle"></div>
