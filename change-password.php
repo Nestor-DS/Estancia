@@ -17,7 +17,7 @@ if(isset($_POST['change']))
     }
     else
     {
-        $_SESSION['msg1']="¡Contraseña antigua no coincide!";
+        $_SESSION['msg1']="¡Contraseña actual no coincide!";
     }
 }
 ?>
@@ -47,7 +47,7 @@ if(isset($_POST['change']))
 {
         if(document.form1.oldpass.value=="")
         {
-            alert("¡Campo de contraseña antigua vacío!");
+            alert("¡Campo de contraseña actual vacío!");
             document.form1.oldpass.focus();
             return false;
             }
@@ -77,7 +77,7 @@ if(isset($_POST['change']))
             }
             else if(document.form1.newpass.value!= document.form1.confirmpassword.value)
             {
-            alert("¡El campo de contraseña y el campo de confirmar contraseña no coinciden!");
+            alert("¡El campo de contraseña nueva y el campo de confirmar contraseña no coinciden!");
             document.form1.newpass.focus();
             return false;
             }
@@ -152,8 +152,7 @@ if(isset($_POST['change']))
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel-footer">
-                                    <button class="btn btn-default">Limpiar Formulario</button>                                    
+                                <div class="panel-footer">                                 
                                     <input type="submit" value="Cambiar" name="change" class="btn btn-primary pull-right">
                                 </div>
                             </div>

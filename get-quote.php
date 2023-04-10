@@ -224,7 +224,7 @@ while($rw=mysqli_fetch_array($query)){
    <?php } ?>   
                                 </div>
                                 <div class="panel-footer">
-                                    <button class="btn btn-default">Limpiar Formulario</button>                                    
+                                                                       
                                     <input value="Enviar" type="submit" name="submit" class="btn btn-primary pull-right">
                                 </div>
                             </div>

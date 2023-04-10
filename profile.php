@@ -183,7 +183,7 @@ $query=mysqli_query($con,"select * from user where email='".$_SESSION['login']."
                                 </div>
 								<?php } ?>
                                 <div class="panel-footer">
-                                    <button class="btn btn-default" type="reset">Limpiar Formulario</button>                                    
+                                                                        
                                     <input type="submit" value="Actualizar" name="update" class="btn btn-primary pull-right">
                                 </div>
                             </div>

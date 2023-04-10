@@ -46,7 +46,7 @@ $_SESSION['msg']= "Correo electrónico no registrado con nosotros";
         <div class="col-md-5 col-md-offset-1">
           <h2>Olvidé mi contraseña</h2>
           <p>
-            <a href="registration.php">Regístrate Ahora!</a> con una cuenta, es gratis y siempre lo será...</p>
+            <a href="registration.php">Registrarse ahora</a> con una cuenta, es gratis y siempre lo será...</p>
           <br>
 
 		   

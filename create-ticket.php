@@ -153,7 +153,7 @@ echo "<script>alert('Nota Generada');</script>";
                                 </div>
 								
                                 <div class="panel-footer">
-                                    <button class="btn btn-default">Limpiar Formulario</button>                                    
+                                                                      
                                     <input type="submit" value="Enviar" name="send" class="btn btn-primary pull-right">
                                 </div>
                             </div>

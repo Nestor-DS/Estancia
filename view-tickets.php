@@ -47,13 +47,8 @@ check_login();
     </div>
     <div class="clearfix"></div>
     <div class="content">
-      <ul class="breadcrumb">
-        <li>
-          <p>Inicio</p> 
-        </li>
-        <li><a href="#" class="active">Ver Nota</a></li>
-      </ul>
-      <div class="page-title"> <i class="icon-custom-left"></i>
+      
+      <div class="page-title"> 
         <h3>Soporte de Nota</h3>
       </div>
       <div class="clearfix"></div>
